@@ -42,7 +42,7 @@ const str = 'er'
 const addEnding = (wordConverter, str) => {
     let result = [];
     for (let i = 0; i < wordConverter.length; i++) {
-        result[i] = wordConverter[i] + str // assign like this
+        result[i] = wordConverter[i] + str 
     }
     return result
 }
