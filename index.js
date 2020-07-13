@@ -96,18 +96,35 @@ const calculateHours = (obj) => {
     hours = obj.map(obj => obj.end - obj.start)
     return hours.reduce((acc, num) => acc + num);
 }
-console.log(calculateHours(hourTracking));
-
+/* console.log(calculateHours(hourTracking)); */
 // task 7
 
 class Course {
 
+    constructor(teacher, path, numberOfStudents) {
+        this.teacher = teacher;
+        this.path = path;
+        this.numberOfStudents = numberOfStudents;
+    }
+    spaceNeeded = () => `The classroom should be ${this.numberOfStudents*2}m².`;
+    details = () => `This is a ${this.path} course taught by ${this.teacher}. There are ${this.numberOfStudents} students taking the course.`
 }
 
+const developerClass = new Course('Naqvi Syed', 'Web Development', 22);
+console.log(developerClass.spaceNeeded());
+console.log(developerClass.details());
 // task 8
 
-const capitalizeFirstLetter = () => {}
+const capitalizeFirstLetter = (string) => {
+    let array = string.split(' ');
+    let newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        newArray.push(array[i].charAt(0).toUpperCase() + array[i].slice(1));
+    }
+    return newArray.join(' ');
 
+}
+console.log(capitalizeFirstLetter("hey there"));
 // task 9
 
 const validPin = () => {}
