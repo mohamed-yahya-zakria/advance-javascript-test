@@ -34,9 +34,6 @@ console.log(`******************** Arrays -1. ********************\n`, convertArr
 console.log(`*******************************************`)
 
 // 2. Create Grid
-/* let createGrid=
-console.log(`******************** Arrays -2. ********************\n`, createGrid)
-console.log(`*******************************************`) */
 
 // 3.
 let wordConverter = ["smart", "kind", "sweet", "small", "clear"]
