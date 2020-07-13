@@ -125,6 +125,8 @@ const capitalizeFirstLetter = (string) => {
 
 }
 console.log(capitalizeFirstLetter("hey there"));
+
+
 // task 9
 
 const validPin = () => {}
@@ -133,7 +135,7 @@ const validPin = () => {}
 
 // Do not edit or answer below this line
 // EDITING MODULE EXPORTS WILL RESULT IN AN AUTOMATIC FAIL
-/* module.exports = {
+module.exports = {
     profileData,
     convertObjectToArray,
     convertArrayData,
@@ -143,4 +145,4 @@ const validPin = () => {}
     Course,
     capitalizeFirstLetter,
     validPin
-}; */
+};
